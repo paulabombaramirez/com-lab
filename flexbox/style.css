@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(43, 59, 43);
+}
+
+.item {
+    height: 30px;
+    background-color: rgb(76, 119, 76);
+    align-items: center;
+    justify-content: center;
+}
