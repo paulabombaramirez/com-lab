@@ -1,130 +1,160 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moodify - Home</title>
-  <link rel="stylesheet" href="css/style.css">
+<title>Memify</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="app">
+<div class="container">
+<div class="sidebar">
+<div class="sidebar-brand">
+<img
+class="logo"
+src="spotifylogo.png" alt="Memify"
+/>
+<h2>Music</h2>
+</div>
+<a href="#search-input">Home</a>
+<a href="#">Artists</a>
+<a href="#">Albums</a>
+<a href="#">Library</a>
+</div>
+<div class="main">
+<div class="topbar" id="search-input">
+<div class="search">
+<img
+class="icon"
+src="https://img.icons8.com/ios-glyphs/30/ffffff/search--v1.png"
+alt=""
+/>
+<input
+type="search"
 
-    <aside class="sidebar">
-      <div class="logo">Moodify</div>
-
-      <nav class="sidebar-nav">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="moods.html">Discover Moods</a></li>
-          <li><a href="library.html">Your Library</a></li>
-        </ul>
-      </nav>
-
-      <div class="sidebar-section">
-        <h3>Your Collections</h3>
-        <ul class="playlist-list">
-          <li><a href="#">Late Night Thoughts</a></li>
-          <li><a href="#">Main Character Energy</a></li>
-          <li><a href="#">Post-Exam Collapse</a></li>
-          <li><a href="#">Rainy Day Nostalgia</a></li>
-          <li><a href="#">First Date Anxiety</a></li>
-        </ul>
-      </div>
-    </aside>
-
-    <main class="main-content">
-      <header class="topbar">
-        <div class="nav-buttons">
-          <button>&larr;</button>
-          <button>&rarr;</button>
-        </div>
-        <div class="profile">Your Mood Profile</div>
-      </header>
-
-      <section class="hero">
-        <h1>Good evening</h1>
-      </section>
-
-      <section class="content-section">
-        <h2>Popular moods</h2>
-        <div class="card-grid">
-          <div class="card">
-            <img src="images/mood1.jpg" alt="Overthinking at 2AM">
-            <h3>Overthinking at 2AM</h3>
-            <p>spiraling, reflective, too awake</p>
-          </div>
-
-          <div class="card">
-            <img src="images/mood2.jpg" alt="Main Character Energy">
-            <h3>Main Character Energy</h3>
-            <p>confident, cinematic, glowing</p>
-          </div>
-
-          <div class="card">
-            <img src="images/mood3.jpg" alt="Rainy Day Nostalgia">
-            <h3>Rainy Day Nostalgia</h3>
-            <p>soft sadness, memory, comfort</p>
-          </div>
-
-          <div class="card">
-            <img src="images/mood1.jpg" alt="First Date Anxiety">
-            <h3>First Date Anxiety</h3>
-            <p>hopeful, tense, overprepared</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-section">
-        <h2>Featured emotional states</h2>
-        <div class="artist-grid">
-          <div class="artist-card">
-            <img src="images/mood2.jpg" alt="Anxiety">
-            <h3>Anxiety</h3>
-            <p>feeling</p>
-          </div>
-
-          <div class="artist-card">
-            <img src="images/mood3.jpg" alt="Nostalgia">
-            <h3>Nostalgia</h3>
-            <p>feeling</p>
-          </div>
-
-          <div class="artist-card">
-            <img src="images/mood1.jpg" alt="Hope">
-            <h3>Hope</h3>
-            <p>feeling</p>
-          </div>
-
-          <div class="artist-card">
-            <img src="images/mood2.jpg" alt="Peace">
-            <h3>Peace</h3>
-            <p>feeling</p>
-          </div>
-        </div>
-      </section>
-    </main>
-  </div>
-
-  <footer class="bottom-bar">
-    <div class="bottom-left">
-      <img src="images/mood1.jpg" alt="Current mood">
-      <div>
-        <h4>Quiet Happiness</h4>
-        <p>currently streaming</p>
-      </div>
-    </div>
-
-    <div class="bottom-center">
-      <button>shuffle</button>
-      <button>back</button>
-      <button class="play-button">play</button>
-      <button>next</button>
-      <button>repeat</button>
-    </div>
-
-    <div class="bottom-right">
-      <p>volume of feeling</p>
-    </div>
-  </footer>
+placeholder="Search songs, artists, albums…"
+/>
+<button class="icon-btn" type="button">
+<img
+class="icon"
+src="https://img.icons8.com/ios-glyphs/30/ffffff/microphone.png"
+alt=""
+/>
+</button>
+</div>
+<div class="icon-row" >
+<button class="icon-btn" type="button" >
+<img
+class="icon"
+src="https://img.icons8.com/ios-glyphs/30/ffffff/bell.png"
+alt=""
+/>
+</button>
+<button class="icon-btn" type="button" >
+<img
+class="icon"
+src="https://img.icons8.com/ios-glyphs/30/ffffff/like--v1.png"
+alt=""
+/>
+</button>
+<button class="icon-btn" type="button" >
+<img
+class="icon"
+src="https://img.icons8.com/ios-glyphs/30/ffffff/settings.png"
+alt=""
+/>
+</button>
+</div>
+</div>
+<div class="section-title">
+<div>
+<h2>Old Top Artists </h2>
+<p>Artist you might like.</p>
+</div>
+</div>
+<div class="artists">
+<div class="artist-card">
+<div class="avatar">
+<img src="bryanadams1.jpg" alt="Bryan Adams" />
+</div>
+<p class="artist-name">Bryan Adams</p>
+<p class="artist-sub">On Memify</p>
+</div>
+<div class="artist-card">
+<div class="avatar">
+<img src="the1975.webp" alt="The 1975" />
+</div>
+<p class="artist-name">The 975</p>
+<p class="artist-sub">On Memify</p>
+</div>
+<div class="artist-card">
+<div class="avatar">
+<img src="thepolice.jpg" alt="The Police" />
+</div>
+<p class="artist-name">The Police</p>
+<p class="artist-sub">On Memify</p>
+</div>
+<div class="artist-card">
+<div class="avatar">
+<img src="JeffBuckley.jpg" alt="Jeff Buckley" />
+</div>
+<p class="artist-name">Jeff Buckley</p>
+<p class="artist-sub">On Memify</p>
+</div>
+<div class="artist-card">
+<div class="avatar">
+<img src="oasis.jpeg" alt="OASIS" />
+</div>
+<p class="artist-name">OASIS</p>
+<p class="artist-sub">On Memify</p>
+</div>
+<div class="artist-card">
+<div class="avatar">
+<img src="sade.jpg" alt="Sade" />
+</div>
+<p class="artist-name">Sade</p>
+<p class="artist-sub">On Memify</p>
+</div>
+</div>
+<div class="section-title">
+<div>
+<h1>Popular Songs</h1>
+<p>Hover any card for effects.</p>
+</div>
+</div>
+<div class="songs">
+<div class="song-card">
+<img src="bryanadams.jpg" alt="Run to you" />
+<h3>Run to you</h3>
+<a href="page1.html">View Details →</a>
+</div>
+<div class="song-card">
+<img src="aboutyou.png" alt="About you" />
+<h3>About you</h3>
+<a href="page2.html">View Details →</a>
+</div>
+<div class="song-card">
+<img src="everybreathyoutake.jpg" alt="Every breath you take" />
+<h3>Every breath you take</h3>
+<a href="page3.html">View Details →</a>
+</div>
+<div class="song-card">
+<img src="loveryoushouldvecomeover.jpg" alt="Lover you should've come over" />
+<h3>Lover you should've come over</h3>
+<a href="page4.html">View Details →</a>
+</div>
+<div class="song-card">
+<img src="dontlookbackinanger.jpg" alt="Dont look back in anger" />
+<h3>Dont look back in anger</h3>
+<a href="page5.html">View Details →</a>
+</div>
+<div class="song-card">
+<img src="smoothoperator.jpg" alt="Smooth Operator" />
+<h3>Smooth Operator</h3>
+<a href="page6.html">View Details →</a>
+</div>
+</div>
+</div>
+</div>
 </body>
 </html>
