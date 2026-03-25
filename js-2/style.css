@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    background-color: deepskyblue;
+}
+
+.boxContainer{
+    width: 300px;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+
+    position:relative;
+    transition: left 1s ease-in-out;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin: 4px;
+}

@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  background-color: antiquewhite;
+}
+
+#heyparagraph {
+  transform: rotate(6deg);
+  transition: background-color 10s linear;
+}
+
+#heyparagraph {
+  background-color: blueviolet;
+  color: white;
+}
+
+/* #specialo {
+  display: inline-block;
+  transform: translate(10px,40px);
+} */
+
+img{
+  transform: skew(40deg);
+}
+
+#hello{
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+#hello span{
+    transition: transform 3s ease-out;
+    display: inline-block;
+    transform: translate(0px,0px);
+}
+
+#hello:hover span:nth-child(1){
+    display: inline-block;
+  transform: translate(10px,40px)
+}
+
+#hello:hover span:nth-child(2){
+    display: inline-block;
+  transform: translate(20px,-40px)
+}
+
+div:nth-child(even){
+  background-color: green;
+}
+
+@keyframes mySkewing{
+  from {
+  transform: skew(0deg,0deg);
+}
+to {
+  transform: skew(20deg,30deg);
+}
+}
+
+img {
+  animation: mySkewing 3s infinite alternate;
+}
+

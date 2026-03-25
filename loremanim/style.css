@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh; 
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.text {
+  font-size: 24px;
+  transition: transform 0.8s ease, color 0.3s;
+}
+
+
+.container:hover .text {
+  transform: translateX(-150px);
+
+}
+
+.container:hover .text::after {
+  content: "Lorem ipsum dolor sit amet";
+  position: absolute;
+  left: 50%;
+  transform: translateX(150px);
+}

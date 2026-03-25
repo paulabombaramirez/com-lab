@@ -223,7 +223,7 @@ body {
 
 .song-card:hover {
   border-color: #ffffff24;
-  box-shadow: 0 12px 30px #00000059;
+  box-shadow: 0 12px 30px black;
 }
 
 .song-card img {
@@ -301,7 +301,7 @@ body {
 
 .song-box:hover {
   border-color: #ffffff24;
-  box-shadow: 0 12px 30px #00000059;
+  box-shadow: 0 12px 30px black;
 }
 
 h1 {
