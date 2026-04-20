@@ -1,0 +1,26 @@
+
+body{
+    background-color: rgb(53, 114, 63);
+}
+
+.enclosure{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(181, 228, 158);
+    position: absolute;
+}
+
+#giraffeEnclosure{
+    left: 50%;
+    top: 20%;
+}
+
+#monkeyEnclosure{
+    left: 10%;
+    top: 10%;
+}
+
+#snakeEnclosure{
+    left: 70%;
+    top: 50%;
+}

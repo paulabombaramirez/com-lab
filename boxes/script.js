@@ -1,0 +1,1 @@
+let firstbtn = document.querySelector("firstbtn")

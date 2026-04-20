@@ -1,0 +1,69 @@
+body {
+    background: #281001;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #f5e6c8;
+}
+
+h1 {
+    font-size: 1.1rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-bottom: 2rem;
+}
+
+#clock {
+    display: flex;
+    align-items: flex-end;
+}
+
+.unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fruit-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.fruit-wrap img {
+    display: block;
+    height: 220px;
+}
+
+/* All seed zones stretch to cover the full fruit-wrap so % left/top always resolve */
+.seed-zone {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+}
+
+.seed {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #2a0f00;
+    transform: translate(-50%, -50%);
+}
+
+#soundBtn {
+    position: fixed;
+    align-items: center;
+    bottom:20px;
+    background: none;
+    border: 1px solid beige;
+    color: beige;
+    cursor: pointer;
+}
+
+#soundBtn:active {
+    transform: scale(0.95);
+}
