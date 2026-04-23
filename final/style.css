@@ -1,17 +1,35 @@
 body {
-  background: #0b0b0b;
+  background: beige;
 
 }
+
+#Btn{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    
+    background: none;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(16, 16, 8);
+    cursor: pointer;
+}
+
 
 .leftside{
   width: 300px;
   background-color: turquoise;
   position: fixed;
   height: 100vh;
+  left: 0;
+  top: 0;
 }
 
-.righside{
-    color: aliceblue;
-    left:50%
+.rightside{
+  width: 300px;
+  background-color: turquoise;
+  position: fixed;
+  height: 100vh;
+  right: 0;
+  top: 0;
   
 }
