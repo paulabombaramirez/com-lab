@@ -25,6 +25,7 @@ if(percentage > 75){
 
 
 }
+
 window.addEventListener("scroll",windowWasScrolled)
 
 
