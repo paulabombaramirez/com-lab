@@ -3,11 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+ 
 body {
   background: white;
 }
-
+ 
 .title{
   text-align: center;
   color: rgb(167, 27, 27);
@@ -21,21 +21,19 @@ body {
   height: 100vh;
   background-color: white;
 }
-
+ 
 .windowHeight{
     height: 100vh;
     width: 100%;
-    background-color: rgb(252, 251, 250);
-    outline: 2px black dashed;
+    background-color: white;
 }
-
+ 
 .windowHeight img {
     width: 100%;
     height: 60%;
-     margin-left: 2px;
-
+    margin-left: 8px;
 }
-
+ 
 .girl {
     position: absolute;
     bottom: 0;
@@ -43,7 +41,7 @@ body {
     transform: translateX(500px);
     transition: transform 1s ease;
 }
-
+ 
 .boy {
     position: absolute;
     bottom: 0;
@@ -51,15 +49,23 @@ body {
     transform: translateX(-500px);
     transition: transform 1s ease;
 }
-
+ 
 .girl img {
     width: 150px;
 }
-
+ 
 .boy img {
     width: 150px;
 }
-
+ 
+.scroll{
+   height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+ 
 .leftside {
   width: 300px;
   background-color: rgb(128, 28, 13);
@@ -71,12 +77,12 @@ body {
   transform: translateX(-300px);
   transition: transform 0.5s;
 }
-
+ 
 .leftside img {
   width: 100%;
   object-fit: contain;
 }
-
+ 
 .rightside {
   width: 300px;
   background-color: rgb(128, 28, 13);
@@ -88,12 +94,12 @@ body {
   transform: translateX(300px);
   transition: transform 0.5s;
 }
-
+ 
 .rightside img {
   width: 100%;
   object-fit: contain;
 }
-
+ 
 .topbar {
   background-color: rgb(193, 113, 110);
   text-align: center;
@@ -106,7 +112,7 @@ body {
   transform: translateY(-60px);
   transition: transform 0.5s;
 }
-
+ 
 .button {
   position: fixed;
   top: 50%;
@@ -117,12 +123,12 @@ body {
   cursor: pointer;
   padding: 10px 20px;
 }
-
+ 
 #link {
   color: black;
   text-decoration: none;
 }
-
+ 
 .maincontent {
   min-height: 100vh;
   display: flex;
@@ -131,7 +137,7 @@ body {
   padding: 20px 320px;
   gap: 10px;
 }
-
+ 
 .bubble {
   max-width: 60%;
   padding: 10px 15px;
@@ -140,21 +146,238 @@ body {
   font-size: 15px;
   line-height: 1.4;
 }
-
+ 
 .bubble.romeo {
   align-self: flex-end;
   background: rgb(167, 27, 27);
   color: white;
-  border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 0px;
 }
-
+ 
 .bubble.juliet {
   align-self: flex-start;
   background: #f0dde0;
   color: #2a1a1c;
-  border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 0px;
+}
+ 
+@keyframes shake {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(10deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+ 
+#call img {
+    animation: shake 0.5s ease-in-out infinite;
+}
+ 
+#call img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.05)
+}
+ 
+.telephonewrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+    height: 300vh;
+    padding-bottom: 400px;
+    color: white;
+}
+ 
+#romeoCall {
+    text-align: right;
+    width: 200px;
+    transition: opacity 0.6s ease;
+}
+ 
+#julietCall {
+    text-align: left;
+    width: 200px;
+    transition: opacity 0.6s ease;
+}
+ 
+#callText {
+    font-size: 20px;
+    margin-top: 20px;
+}
+ 
+.finalsection {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(15, 12, 41), white);
 }
 
-.call {
-   
+.whitesection {
+    height: 100vh;
+    width: 100%;
+    background: white;
+}
+
+.topbar2 {
+  background-color: rgb(193, 113, 110);
+  text-align: center;
+  padding: 15px;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-60px);
+  transition: transform 0.5s;
+  z-index: 5;
+}
+
+.leftside2 {
+  width: 300px;
+  background-color: rgb(128, 28, 13);
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  text-align: center;
+  transform: translateX(-300px);
+  transition: transform 0.5s;
+  z-index: 10;
+}
+
+.leftside2 img {
+  width: 100%;
+  object-fit: contain;
+}
+ 
+.whitesection {
+    height: 100vh;
+    width: 100%;
+    background: white;
+}
+ 
+.topbar2 {
+  background-color: rgb(193, 113, 110);
+  text-align: center;
+  padding: 15px;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-60px);
+  transition: transform 0.5s;
+  z-index: 10;
+}
+ 
+.leftside2 {
+  width: 300px;
+  background-color: rgb(128, 28, 13);
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  text-align: center;
+  transform: translateX(-300px);
+  transition: transform 0.5s;
+}
+ 
+.leftside2 img {
+  width: 100%;
+  object-fit: contain;
+}
+ 
+.rightside2 {
+  width: 300px;
+  background-color: rgb(128, 28, 13);
+  position: fixed;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  text-align: center;
+  transform: translateX(300px);
+  transition: transform 0.5s;
+  z-index: 10;
+}
+
+#finalMessages {
+  background-color: white;
+}
+ 
+.rightside2 img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.endsection {
+  height: 100vh;
+  width: 100%;
+  background: white;
+  position: relative;
+}
+
+.endsection img {
+    width: 100%;
+    height: 60%;
+    margin-left: 8px;
+}
+ 
+.endsection .girl {
+  transform: translateX(500px);
+}
+.endboy {
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+  transform: translateX(-500px);
+  transition: transform 1s ease;
+}
+
+.endboy img {
+  width: 250px;
+}
+
+.girlSpeech {
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+  background: #f0dde0;
+  color: #2a1a1c;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.boySpeech {
+  position: absolute;
+  bottom: 200px;
+  right: 0;
+  background: rgb(167, 27, 27);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.theend {
+  height: 100vh;
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theend p {
+  color: white;
+  font-family: "Georgia", serif;
+  font-size: 100px;
+  font-style: italic;
 }
