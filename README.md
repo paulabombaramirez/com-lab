@@ -3,6 +3,15 @@
 THE LIVE LINK TO MY PROJECT IS: [https://paulabombaramirez.github.io/CommLab-S26].
 
 This is Paula's Commlab Page
+## FINAL: Romeo & Juliet
+A Modern Love Story, Told Through a Screen
+A scrollable web adaptation of Shakespeare's Romeo & Juliet, reimagined as a Disney park meet-cute.
+
+![disney](disney.png)
+![messages](messages.png)
+
+DESCRIPTION:
+This project adapts Shakespeare's Romeo & Juliet into a modern teenage love story set at a Disney theme park. Rather than retelling the play directly, it translates its emotional core, a sudden connection, stolen moments, and their families pulling them apart . The language of the web: iMessage bubbles, a phone call that cuts off, and a background that slowly turns to night as the story deepens.  The reader does not just read about the story, they scroll through it, wait for messages to appear, and experience the pacing of a conversation they cannot rush.
 
 ## MIDTERM: Memify
 Songs:
