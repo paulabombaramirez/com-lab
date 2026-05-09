@@ -4,7 +4,6 @@ body {
   font-family: Georgia, serif;
   font-size: 18px;
   padding: 4rem;
-  line-height: 1;
 }
 
 .container {
@@ -16,27 +15,33 @@ body {
 
 .text-out {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   transition: transform 0.6s ease;
   white-space: nowrap;
 }
 
 .text-in {
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateX(800px);
+  top: 0; left: 0;
+  transform: translateX(900px);
   color: hotpink;
   font-style: italic;
   transition: transform 0.6s ease;
   white-space: nowrap;
 }
 
-.container:hover .text-out {
-  transform: translateX(-800px);
+.container:hover .text-out { transform: translateX(-900px); }
+.container:hover .text-in  { transform: translateX(0); }
+
+.text-in span { display: inline-block; }
+
+@keyframes wave {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
 }
 
-.container:hover .text-in {
-  transform: translateX(0);
-}
+.container:hover .text-in span { animation: wave 0.6s ease-in-out infinite; }
+
+.text-in span:nth-child(odd)  { animation-delay: 0s; }
+.text-in span:nth-child(even) { animation-delay: 0.15s; }
+.text-in span:nth-child(3n)   { animation-delay: 0.3s; }
